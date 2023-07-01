@@ -3,7 +3,22 @@ guid: a22b0639a56c22549b33dd8cea8b85fa
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stena
+    second: {fileID: 2100000, guid: 983101101cd59d5418c4ad0ca86b9f0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strecha
+    second: {fileID: 2100000, guid: ccbc3c1b794ee72428e36013c8d65c1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zem
+    second: {fileID: 2100000, guid: a85b410c280200f4b8bacb69964be3d3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
