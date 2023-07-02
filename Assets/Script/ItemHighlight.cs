@@ -7,28 +7,31 @@ public class ItemHighlight : MonoBehaviour
 
     Color startColor;
     [SerializeField] Color hightlightColor;
-    Transform[] childTrans;
-    List<Color> startcolors;
+    public Renderer[] childTrans;
+    public List<Color> startcolors;
 
     private void Awake()
     {
-        childTrans = GetComponentsInChildren<Transform>();
+        childTrans = GetComponentsInChildren<Renderer>(true);
+        foreach(Renderer i in childTrans)
+        {
+            startcolors.Add(i.material.color);
+        }
     }
 
     private void OnMouseEnter()
     {
-        foreach(Transform i in childTrans)
+        foreach(Renderer i in childTrans)
         {
-            startcolors.Add(i.GetComponent<Renderer>().material.color);
-            i.GetComponent<Renderer>().material.color = hightlightColor;
+            i.material.color = hightlightColor;
         }
     }
 
     private void OnMouseExit()
     {
-        for(int i = 0; i <= childTrans.Length; i++)
+        for(int i = 0; i < childTrans.Length; i++)
         {
-            childTrans[i].GetComponent<Renderer>().material.color = startcolors[i];
+            childTrans[i].material.color = startcolors[i];
         }
     }
 }

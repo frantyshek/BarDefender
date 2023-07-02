@@ -2359,7 +2359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f53a3936a7885438ba9acde77e6201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deliverAudioClips: []
+  deliverAudioClips:
+  - {fileID: 8300000, guid: efffbbfb2ba71ee419479bce435783c6, type: 3}
+  - {fileID: 8300000, guid: 20c007259ce0ac544b396c3d370cb3b4, type: 3}
+  - {fileID: 8300000, guid: f4f8b7dfadc77764ea2a1ba8515e9dd6, type: 3}
   anim: {fileID: 6212096287874205967}
 --- !u!114 &7107656380841541914
 MonoBehaviour:
