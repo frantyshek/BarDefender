@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class CreatePotion : MonoBehaviour, IAction
 {
+    [SerializeField] AudioSource audioS;
+    [SerializeField] AudioClip[] createPotionsAudios;
+
     float range = 3f;
 
     PickUpItem pickUpItem;
@@ -18,6 +21,7 @@ public class CreatePotion : MonoBehaviour, IAction
         pickUpItem = GetComponent<PickUpItem>();
         actionScheduler = GetComponent<ActionScheduler>();
         move = GetComponent<Move>();
+        audioS = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -79,6 +83,9 @@ public class CreatePotion : MonoBehaviour, IAction
 
                 pickUpItem.AddImage(i.GetFinalItem().GetItemSprite());
                 pickUpItem.itemList.Add(i.GetFinalItem());
+
+                int rnd = UnityEngine.Random.Range(0, createPotionsAudios.Length);
+                audioS.PlayOneShot(createPotionsAudios[rnd]);
             }
         }
         target = null;

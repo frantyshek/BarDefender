@@ -9,14 +9,4 @@ public class BarTableBehaviour : MonoBehaviour
 
     public List<Recipes> GetRecipes() { return recipes; }
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

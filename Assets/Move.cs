@@ -8,6 +8,8 @@ public class Move : MonoBehaviour, IAction
 
     [SerializeField] Transform target;
     [SerializeField] float maxSpeed = 6f;
+    
+    [SerializeField] AudioSource audioS;
 
     NavMeshAgent navMesh;
     ActionScheduler actionScheduler;
@@ -46,6 +48,26 @@ public class Move : MonoBehaviour, IAction
         Vector3 velocity = navMesh.velocity;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         float speed = localVelocity.z;
-        //GetComponent<Animator>().SetFloat("forwardSpeed", speed);
+
+        if(speed > 0)
+        {
+            if (audioS == null) return;
+            if (!audioS.isPlaying)
+            {
+                audioS.Play();
+            }
+        }
+        else
+        {
+            if (audioS == null) return;
+            audioS.Stop();
+        }
+
+        Animator anim = GetComponentInChildren<Animator>();
+        if(anim != null)
+        {
+            anim.SetFloat("speed", speed);
+        }
+       
     }
 }

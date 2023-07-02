@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
+    [SerializeField] AudioClip[] deliverAudioClips;
+
+    AudioSource audioS;
     Move move;
     PickUpItem pickUpItem;
 
@@ -12,6 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         move = GetComponent<Move>();
         pickUpItem = GetComponent<PickUpItem>();
+        audioS = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -40,6 +44,8 @@ public class PlayerController : MonoBehaviour
             {
                 pickUpItem.ClearImages();
                 pickUpItem.itemList.Clear();
+                int rnd = Random.Range(0, deliverAudioClips.Length);
+                audioS.PlayOneShot(deliverAudioClips[rnd]);
                 target.Destroy();
             }
             return true;
