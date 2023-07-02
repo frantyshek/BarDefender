@@ -17,13 +17,14 @@ public class EnemyBehaviour : MonoBehaviour
     float timeSinceLastAttack = Mathf.Infinity;
 
     Move move;
-
+    Animator anim;
     GameObject targetDealDamage;
 
     private void Awake()
     {
         move = GetComponent<Move>();
         audioS = GetComponent<AudioSource>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     public void Initialize(GameObject _target)
@@ -51,10 +52,15 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (timeSinceLastAttack > attackCooldown)
         {
+            anim.Play("Nothing");
             int rnd = Random.Range(0, attackAudioClips.Length);
             audioS.PlayOneShot(attackAudioClips[rnd]);
             targetDealDamage.GetComponent<Barier>().TakeDamage(damage);
             timeSinceLastAttack = 0;
+            if (anim != null)
+            {
+                anim.Play("Attack");
+            }
         }
     }
 

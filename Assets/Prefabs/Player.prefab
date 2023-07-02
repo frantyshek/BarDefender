@@ -2346,7 +2346,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   maxSpeed: 10
-  walkAudio: {fileID: 0}
   audioS: {fileID: 5196028824093408803}
 --- !u!114 &7107656380841541915
 MonoBehaviour:
@@ -2360,6 +2359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f53a3936a7885438ba9acde77e6201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deliverAudioClips: []
+  anim: {fileID: 6212096287874205967}
 --- !u!114 &7107656380841541914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2434,6 +2435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b61ba4a1d6c3ee4b9cb592f4ea704f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioS: {fileID: 0}
+  createPotionsAudios: []
 --- !u!82 &7383320946630480725
 AudioSource:
   m_ObjectHideFlags: 0

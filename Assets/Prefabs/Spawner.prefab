@@ -149,7 +149,7 @@ MonoBehaviour:
   - {fileID: 89363538087632364}
   - {fileID: 89363538215479011}
   enemiesPrefab:
-  - {fileID: 1417821564598696687, guid: 2383222ea07064d45ba5c574d4fe9353, type: 3}
+  - {fileID: 260567063176476921, guid: ab2784a0edd5d5a4e9136b43c979dc58, type: 3}
   bariers:
   - {fileID: 0}
   - {fileID: 0}

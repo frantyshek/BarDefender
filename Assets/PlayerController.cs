@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] AudioClip[] deliverAudioClips;
+    [SerializeField] Animator anim;
 
     AudioSource audioS;
     Move move;
@@ -84,6 +85,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetMouseButtonDown(1))
             {
+                //anim.Play("Collect");
                 GetComponent<PickUpItem>().PickUp(target.gameObject);
             }
             return true;
