@@ -57,6 +57,8 @@ public class EnemyBehaviour : MonoBehaviour
             audioS.PlayOneShot(attackAudioClips[rnd]);
             targetDealDamage.GetComponent<Barier>().TakeDamage(damage);
             timeSinceLastAttack = 0;
+            anim.enabled = false;
+            anim.enabled = true;
             if (anim != null)
             {
                 anim.Play("Attack");
