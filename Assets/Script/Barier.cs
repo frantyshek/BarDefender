@@ -33,6 +33,7 @@ public class Barier : MonoBehaviour
             Camera.main.GetComponent<AudioSource>().Stop();
             audioS.Play();
             audioEnd.Play();
+            gameOverScreen.GetComponent<GameOver>().UpdateText();
             gameOverScreen.SetActive(true);
             Time.timeScale = 0f;
         }
