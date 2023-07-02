@@ -16078,7 +16078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoints:
-  - {fileID: 0}
+  - {fileID: 89363539755662728}
   - {fileID: 89363538353486446}
   - {fileID: 89363538662892872}
   - {fileID: 89363539057658767}
