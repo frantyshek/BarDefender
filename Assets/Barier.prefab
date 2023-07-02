@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70c70adcddbb8141b0002c87fe55acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2000
+  health: 1500
   slider: {fileID: 6107386692690711283}
   gameOverScreen: {fileID: 0}
   audioS: {fileID: 4627345603721343260}

@@ -995,6 +995,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: afe95c6303319214da2ee161ab2020bb, type: 2}
     - target: {fileID: 1417821564598696685, guid: 2383222ea07064d45ba5c574d4fe9353, type: 3}
+      propertyPath: attackCooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417821564598696685, guid: 2383222ea07064d45ba5c574d4fe9353, type: 3}
       propertyPath: gulpAudioClips.Array.size
       value: 4
       objectReference: {fileID: 0}

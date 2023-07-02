@@ -947,9 +947,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1417821564598696685, guid: 2383222ea07064d45ba5c574d4fe9353, type: 3}
+      propertyPath: damage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417821564598696685, guid: 2383222ea07064d45ba5c574d4fe9353, type: 3}
       propertyPath: wantedItem
       value: 
       objectReference: {fileID: 11400000, guid: 582cd2599218850409e198b067604d60, type: 2}
+    - target: {fileID: 1417821564598696685, guid: 2383222ea07064d45ba5c574d4fe9353, type: 3}
+      propertyPath: attackCooldown
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1417821564598696687, guid: 2383222ea07064d45ba5c574d4fe9353, type: 3}
       propertyPath: m_Name
       value: Enemy Orc
