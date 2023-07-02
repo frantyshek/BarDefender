@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] AudioClip[] deliverAudioClips;
     [SerializeField] Animator anim;
+
+    public int score = 0;
+    [SerializeField] TextMeshProUGUI scoreText;
 
     AudioSource audioS;
     Move move;
@@ -48,6 +52,8 @@ public class PlayerController : MonoBehaviour
                 int rnd = Random.Range(0, deliverAudioClips.Length);
                 audioS.PlayOneShot(deliverAudioClips[rnd]);
                 target.Destroy();
+                score++;
+                scoreText.text = "Score: " + score;
             }
             return true;
         }
