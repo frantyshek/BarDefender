@@ -10,11 +10,11 @@ public class Barier : MonoBehaviour
     [SerializeField] Slider slider;
     [SerializeField] GameObject gameOverScreen;
 
-    AudioSource audioS;
+    [SerializeField] AudioSource audioS;
+    [SerializeField] AudioSource audioEnd;
 
     private void Awake()
     {
-        audioS = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -30,7 +30,9 @@ public class Barier : MonoBehaviour
         this.slider.value = health;
         if(health <= 0)
         {
+            Camera.main.GetComponent<AudioSource>().Stop();
             audioS.Play();
+            audioEnd.Play();
             gameOverScreen.SetActive(true);
             Time.timeScale = 0f;
         }
