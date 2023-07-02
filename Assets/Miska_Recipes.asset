@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2e9eefdf9925c741b31f1303363a938, type: 3}
-  m_Name: Barel
+  m_Name: Miska_Recipes
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 11400000, guid: a8396ba8537f0754e8c3028bec919558, type: 2}
-  - {fileID: 11400000, guid: 1856e8ae64341d147ad49ced2b9bad03, type: 2}
-  finalItem: {fileID: 11400000, guid: 8ea18eb4da7c2ce40823427d967d8837, type: 2}
+  - {fileID: 11400000, guid: b215eaa02eb0a724c995fe6cef5349bd, type: 2}
+  - {fileID: 11400000, guid: cf86f91fd79a56944bde3d4a3bce67c0, type: 2}
+  finalItem: {fileID: 11400000, guid: 083e8b30d8d6e8c4ba7bec8cf6eaa267, type: 2}

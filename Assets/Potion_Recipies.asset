@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e9eefdf9925c741b31f1303363a938, type: 3}
+  m_Name: Potion_Recipies
+  m_EditorClassIdentifier: 
+  ingredients:
+  - {fileID: 11400000, guid: 28ffd0d18b66577498a89742f96af97e, type: 2}
+  - {fileID: 11400000, guid: 6eede561c448b3f4c8b70dbce8d49bc0, type: 2}
+  - {fileID: 11400000, guid: 3b6ef9fd85fd6cf42b34c07ed92eb077, type: 2}
+  finalItem: {fileID: 11400000, guid: 528895aea39187946aaab23aee5ea3a3, type: 2}
